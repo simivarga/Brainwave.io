@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <a class="navbar-brand text-white ms-5 fs-2" href="#">Brainwave.io</a>
+        <button class="navbar-toggler me-5" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav fw-bold ms-auto gap-3 me-5 ps-5 py-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-custom text-white fw-bold px-3 py-2" href="#">Get Started Now</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <section class="hero overflow-hidden position-relative z-0 mb-4 mb-lg-0  ">
+        <div class="hero-background pt-5">
+            <div class="container mt-5 ">
+                <div class="row gy-4 gy-md-8 pt-10 pt-lg-8 align-items-center">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="fs-1 fs-lg-1 text-white fw-bold mb-2 mt-3 mt-lg-0">
+                            Manage your remote team work
+                        </h1>
+                       <p class="fs-8 text-white mb-3 mb-lg-4 lh-lg">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes</p>
+                        <div><button class="btn btn-custom text-white px-4  fw-bold py-3"> Explore more</button></div>
+                        <p class="mb-x1 text-white fs-10 button-text text-uppercase fw-bold lh-base text-300 mt-5">Download our app</p>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 position-relative z-2">
+                          <img class="img-fluid pointer" src="assets/App_Store.webp" alt="App Store">
+                          <img class="img-fluid pointer"  src="assets/Play_Store.webp" alt="Google Play">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 position-lg-relative">
+                        <div class="position-lg-absolute text-center z-1">
+                            <img class="img-fluid" style="width: 70%;" src="assets/Frame.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute bottom-0 start-0 end-0 z-1">
+          <img class="w-100 " src="assets/Wave.svg" alt="">
+        </div>
+    </section>
+
+
+
+    <section>
+      <div class="container mt-5">
+        <div class="row pb-6 pb-lg-8 g-3 g-lg-8 px-3 text-center">
+          <div class="col-12 col-md-4">
+            <h2 class="fw-bold fs-1 mb-2">06</h2>
+            <p class=" fs-4 ">Offices are available on different countries</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3 class="fw-bold fs-1 mb-2">238</h3>
+            <p class=" fs-4">Seats are available right now with support</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3 class="fw-bold fs-1 mb-2">1,620</h3>
+            <p class=" fs-4"> People are using our co-work spaces right now</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="container pt-5">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-12 col-lg-6 col-xl-5">
+            <div class="image-grid-placeholder">
+              <img src="assets/Team.webp" alt="Placeholder Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6 px-4">
+            <h2 class="fs-1 fw-bold mb-2 text-center text-lg-start">Collaborate with your team members.</h2>
+            <p class="fs-5 mb-4 text-center text-lg-start"">We share common trends and strategies for improving your rental income</p>
+
+            <h3 class="fs-3 fw-bold mt-4">Project Based Groups</h3>
+            <p class="fs-5 mb-3">You can use this module to monitor ongoing projects seamlessly.</p>
+
+            <h3 class="fs-4 fw-bold mt-4">Unlimited Video Meetings</h3>
+            <p class="fs-5">Conduct unlimited video meetings with us for better business operations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="#" class="to-top text-center"><i class="bi bi-chevron-up text-white"></i> </a>
+    <script>
+       var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 50) {
+      nav.classList.add('bg-dark', 'shadow');
+     } else {
+     nav.classList.remove('bg-dark', 'shadow');
+    }
+});
+
+    </script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

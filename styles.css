@@ -1,0 +1,120 @@
+  
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+  }
+  ::selection {
+    color: rgb(255, 255, 255) !important;
+    background: rgb(71, 193, 1);
+  }
+  
+  :root{
+    --button-bg: #F74D4D;
+    --button-hover: #b43636;
+
+  }  
+
+  .navbar-brand {
+    color: white;
+    font-weight: bold;
+  }
+  .navbar-scrolled{
+    background-color: rgb(49, 60, 89) !important;
+  }
+  .navbar-nav .nav-link {
+    color: white !important;
+  }
+  .btn-custom {
+    background-color:  var(--button-bg) !important;
+    color: white;
+  }
+  .btn-custom:hover{
+    background-color: var(--button-hover) !important;
+  }
+  .pointer:hover {
+    cursor: pointer;
+  }
+  img{
+    height: 100%;
+    object-fit: cover;
+  }
+  .to-top{
+    background-color: var(--button-bg);
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 40px;
+    height: 40px;
+  display: flex !important;
+  align-items: center !important;;
+  justify-content: center !important;
+  font-size: 15px !important;
+  border-radius: 50%;
+  }
+
+ .hero-background{
+    background-image: url('assets/BG.webp');
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    min-height: 60rem !important;
+    display: flex !important;
+    align-items: center;
+ }
+
+.hero-section {
+  padding: 50px 20px;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero-section p {
+  font-size: 1.25rem;
+  margin: 20px 0;
+}
+.btn-custom {
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  width: 20vh;
+}
+.chat-placeholder {
+  background-color: #dfe6e9;
+  width: 300px;
+  height: 600px;
+  border-radius: 20px;
+}
+.app-buttons {
+  margin-top: 20px;
+}
+.app-buttons img {
+  width: 150px;
+  margin: 10px;
+}
+.navbar {
+  background-color: transparent !important;
+  backdrop-filter: blur(30px) !important;
+  transition: .5s;
+}
+.navbar-light .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-toggler{
+  border: 0;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1.1rem;
+}
+.btn-get-started {
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
