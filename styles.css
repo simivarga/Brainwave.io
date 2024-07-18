@@ -5,15 +5,18 @@
   }
   ::selection {
     color: rgb(255, 255, 255) !important;
-    background: rgb(71, 193, 1);
+    background: #68D585;
   }
   
   :root{
     --button-bg: #F74D4D;
     --button-hover: #b43636;
-
+    --linear-bg-color:   linear-gradient(to bottom, #313C59, #161C2D);
   }  
 
+  .logo-dp{
+    display: none;
+  }
   .navbar-brand {
     color: white;
     font-weight: bold;
@@ -22,6 +25,10 @@
     background-color: rgb(49, 60, 89) !important;
   }
   .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.745) !important;
+    font-size: 1.1rem;
+  }
+  .navbar-nav:hover .nav-link:hover{
     color: white !important;
   }
   .btn-custom {
@@ -31,13 +38,11 @@
   .btn-custom:hover{
     background-color: var(--button-hover) !important;
   }
+ 
   .pointer:hover {
     cursor: pointer;
   }
-  img{
-    height: 100%;
-    object-fit: cover;
-  }
+  
   .to-top{
     background-color: var(--button-bg);
     position: fixed !important;
@@ -50,6 +55,11 @@
   justify-content: center !important;
   font-size: 15px !important;
   border-radius: 50%;
+  transition: .4s;
+  }
+  .to-top:hover{
+    background-color: var(--button-hover) ;
+    transition: .4s;
   }
 
  .hero-background{
@@ -60,6 +70,41 @@
     min-height: 60rem !important;
     display: flex !important;
     align-items: center;
+ }
+ .video-container{
+  max-width: 1100px !important;
+  position: relative;
+
+ }
+ .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('assets/experiences.webp') center center / cover no-repeat;
+  visibility: visible;
+}
+ #video {
+  width: 100% !important;
+  border-radius: 1.25rem !important;
+ }
+
+ #button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white !important;
+  border: 0;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%) !important;
+  transition: .5 ease;
+ }
+ #button i{
+  color: var(--button-bg);
+  font-size: 35px;
  }
 
 .hero-section {
@@ -73,14 +118,29 @@
   font-size: 1.25rem;
   margin: 20px 0;
 }
+.btn{
+  order: 1; margin-left: auto; margin-right: 30px;
+}
 .btn-custom {
   background-color: var(--button-bg);
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 1.2rem;
-  border-radius: 5px;
+  border-radius: 15px !important;
   width: 20vh;
+}
+.btn-dark {
+  background-color: #2E2F33 !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 15px !important;
+  width: 20vh;
+}
+.btn-dark:hover{
+  background-color: #585858 !important;
 }
 .chat-placeholder {
   background-color: #dfe6e9;
@@ -106,9 +166,10 @@
 .navbar-light .navbar-toggler{
   border: 0;
 }
-.navbar-nav .nav-link {
-  color: white !important;
-  font-size: 1.1rem;
+.horizontal-line{
+  width: 10.06rem;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .btn-get-started {
   background-color: var(--button-bg);
@@ -117,4 +178,91 @@
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 1rem;
+}
+.timeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+.timeline-step {
+  flex: 1;
+  padding: 20px;
+}
+.timeline-step .circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f44336; /* Default color for circle 1 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  margin: 0 auto 10px;
+}
+.timeline-step:nth-child(2) .circle {
+  background-color: #4CAF50; /* Color for circle 2 */
+}
+.timeline-step:nth-child(3) .circle {
+  background-color: #3F51B5; /* Color for circle 3 */
+}
+.timeline-step .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.timeline-step .description {
+  font-size: 18px;
+}
+
+.experience {
+  background: linear-gradient(to bottom, #313C59, #161C2D) !important;
+}
+.lh-1 {
+  line-height: 1 !important;
+}
+
+.lh-sm {
+  line-height: 1.2 !important;
+}
+
+.lh-base {
+  line-height: 1.084 !important;
+}
+
+.lh-lg {
+  line-height: 1.6 !important;
+}
+
+.lh-xl {
+  line-height: 1.8 !important;
+}
+.bg-pricing{
+  background-color: rgba(244, 247, 250, 1);
+}
+.pricing-text{
+  color: var(--button-bg) !important;
+}
+@media (max-width: 991px) {
+  .timeline {
+      flex-direction: column;
+  }
+  .btn{
+    order: 0 !important;
+  }
+  .navbar-991-none{
+    display: none !important;
+  }
+  .logo-dp{
+    display: block !important;
+  }
+  nav{
+    padding: 50px 0px !important;
+  }
+  .border-top-nav{
+    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
 }
