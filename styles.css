@@ -1,8 +1,11 @@
+  *{
+    font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   
+  }
   html {
     scroll-behavior: smooth;
     overflow-x: hidden !important;
-  }
+    }
   ::selection {
     color: rgb(255, 255, 255) !important;
     background: #68D585;
@@ -38,11 +41,18 @@
   .btn-custom:hover{
     background-color: var(--button-hover) !important;
   }
- 
+  .accordion-button{
+    background-color: white !important;
+    box-shadow: none !important;
+    color: black !important;
+  }
   .pointer:hover {
     cursor: pointer;
   }
-  
+  .accordition-styles {
+    border-top: 5px  solid #68D585;
+    border-radius: 0.625rem;
+  }
   .to-top{
     background-color: var(--button-bg);
     position: fixed !important;
@@ -58,10 +68,13 @@
   transition: .4s;
   }
   .to-top:hover{
-    background-color: var(--button-hover) ;
+    background-color: var(--button-bg) ;
     transition: .4s;
   }
-
+  .link-hover:hover{
+    color: var(--button-hover)!important;
+  
+  }
  .hero-background{
     background-image: url('assets/BG.webp');
     background-position: center;
@@ -242,9 +255,41 @@
 }
 .bg-pricing{
   background-color: rgba(244, 247, 250, 1);
+  
+}
+.check-icon {
+  height: 1.875rem;
+  width: 1.875rem;
+}
+.bg-light-green{
+  background-color: rgba(104, 213, 133, 1) !important;
+}
+.bg-light-grey {
+  background-color: rgb(244,247,250) !important;
+}
+.email-input{
+  padding: 15px 22px !important;
+  border-radius: 8px !important;
+  border: 1px solid #e7e9ed !important;
+  color: rgba(0,0,0,.7) !important;
+  font-size: 1rem;
+}
+.email-input:focus{
+  border-color: #5de7a2 !important;
+}
+.form-control:focus{
+ box-shadow: 0 0 0 .25rem rgba(104,213,133,.25) !important;
 }
 .pricing-text{
   color: var(--button-bg) !important;
+}
+
+.bg-1100{
+  background-color: rgba(22,28,45,1);
+}
+a{
+  color: black !important;
+  text-decoration: none !important;
 }
 @media (max-width: 991px) {
   .timeline {
