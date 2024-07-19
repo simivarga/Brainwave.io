@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
   <body>
@@ -244,82 +246,83 @@
     </section>
     
 
-    <section>
+    <section style="height: 100%; background-color: rgba(22,28,45,1);" >
       <div class="mx-auto text-center">
         <hr class="horizontal-line d-inline-block"/>
       </div>
-      <div class="container pb-8 pb-lg-10">
-        <div class="row justify-content-center">
+      <div class="container pb-8 pb-lg-10" style="height: 100%;">
+        <div class="row justify-content-center align-items-center pb-5">
           <div class="col-md-8 col-lg-7">
-            <h2 class="fs-6 fs-lg-5 fw-bold text-white text-center pt-7 pb-4 pt-lg-9 pb-lg-6 lh-lg"> <span class="underline"> 1,749 remote teams </span>have shared their experience with our app!</h2>
+            <h2 class="fs-lg-5 fw-bold text-white text-center pt-5 pb-5 pt-lg-9 pb-lg-6 lh-lg" style=""> <span class="underline"> 1,749 remote teams </span>have shared their experience with our app!</h2>
           </div>
           <div class="col-12 mb-4 mb-lg-6">
-            <div class="row g-2">
+            <div class="row g-3">
               <div class="swiper-theme-container">
-                <div class="swiper position-relative" data-swiper='{"spaceBetween":20,"mousewheel":{"forceToAxis":true,"sensitiviye":20,"releaseOnEdges":true},"autoplay":{"delay":3000,"disableOnInteraction":false},"breakpoints":{"0":{"slidesPerView":1,"direction":"horizontal","centeredSlide":true,"loop":true},"768":{"direction":"horizontal","centeredSlide":true,"slidesPerView":2,"loop":true},"992":{"slidesPerView":3,"direction":"vertical","loop":false}}}'>
-                  <div class="swiper-wrapper">
-                    <div class="col-12 swiper-slide">
-                      <div class="d-flex justify-content-center gap-2">
-                        <div class="d-flex flex-column flex-lg-row gap-2 px-4 py-x1 review-card-1">
-                          <div class="text-center text-lg-start"><img class="card-image rounded-circle object-fit-cover" src="assets/img/feedback/reviewer_1.webp" alt="" /></div>
-                          <div class="text-center text-lg-start">
-                            <p class="fs-5 mb-2 lh-lg line-clamp-3 text-1100">“OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”</p>
-                            <p class="text-800 lh-xl mb-0">Isaac Olson</p>
+                      <div class="swiper position-relative" >
+                        <div class="swiper-wrapper">
+                          <div class="col-12 swiper-slide">
+                            <div class="d-flex justify-content-center gap-2">
+                              <div class="d-flex flex-column flex-lg-row gap-4 px-4 py-x1 review-card-1 justify-content-center align-items-center">
+                                <div class="text-center text-lg-start"><img class="card-image rounded-circle object-fit-cover " src="assets/feedback/reviewer_1.webp" alt="" /></div>
+                                <div class="text-center text-lg-start">
+                                  <p class="fs-8 mb-2 lh-lg line-clamp-3 text-1100">“OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”</p>
+                                  <p class="fs-9  lh-xl mb-0">Isaac Olson</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 swiper-slide">
+                            <div class="d-flex justify-content-center gap-2">
+                              <div class="d-flex flex-column flex-lg-row gap-4 px-4 py-x1 review-card-2 justify-content-center align-items-center">
+                                <div class="text-center text-lg-start"><img class="card-image rounded-circle object-fit-cover" src="assets/feedback/reviewer_2.webp" alt="" /></div>
+                                <div class="text-center text-lg-start">
+                                  <p class="fs-8 mb-2 lh-lg line-clamp-3 text-1100">“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users who want success.”</p>
+                                  <p class="fs-9  lh-xl mb-0">Barry Young</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 swiper-slide">
+                            <div class="d-flex justify-content-center gap-2">
+                              <div class="d-flex flex-column flex-lg-row gap-4 px-4 py-x1 review-card-3 justify-content-center align-items-center">
+                                <div class="text-center text-lg-start"><img class="card-image rounded-circle object-fit-cover" src="assets/feedback/reviewer_3.webp" alt="" /></div>
+                                <div class="text-center text-lg-start">
+                                  <p class="fs-8 mb-2 lh-lg line-clamp-3 text-1100">“Must have book for all, who want to be Product Designer or Interaction Designer.”</p>
+                                  <p class="fs-9 lh-xl mb-0">Esther Allison</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 swiper-slide">
+                            <div class="d-flex justify-content-center gap-2">
+                              <div class="d-flex flex-column flex-lg-row gap-4 px-4 py-x1 review-card-4 justify-content-center align-items-center">
+                                <div class="text-center text-lg-start"><img class="card-image rounded-circle object-fit-cover" src="assets/feedback/kakashi.webp" alt="" /></div>
+                                <div class="text-center text-lg-start">
+                                  <p class="fs-8 mb-2 lh-lg line-clamp-3 text-1100">“Every day, I eat, sleep, and worry about stupid things. My job is to ensure that these kids have as many days as possible where they can be idiots like this.”</p>
+                                  <p class="fs-9  lh-xl mb-0">Kakashi Hatake</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 swiper-slide">
+                            <div class="d-flex justify-content-center gap-2">
+                              <div class="d-flex flex-column flex-lg-row gap-4 px-4 py-x1 review-card-5 justify-content-center align-items-center">
+                                <div class="text-center text-lg-start"><img class="card-image rounded-circle object-fit-cover" src="assets/feedback/obito.webp" alt="" /></div>
+                                <div class="text-center text-lg-start">
+                                  <p class="fs-8 mb-2 lh-lg line-clamp-3 text-1100">“Life isn’t permanent or predictable. You never know when you will run out of time. The best thing you can do is to be honest with those around you and let them know how you really feel. You never know if you have a tomorrow to come.”</p>
+                                  <p class="fs-9  lh-xl mb-0">Obito Uchiha</p>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 swiper-slide">
-                      <div class="d-flex justify-content-center gap-2">
-                        <div class="d-flex flex-column flex-lg-row gap-2 px-4 py-x1 review-card-2">
-                          <div class="text-center text-lg-start"><img class="card-image rounded-circle object-fit-cover" src="assets/img/feedback/reviewer_2.webp" alt="" /></div>
-                          <div class="text-center text-lg-start">
-                            <p class="fs-5 mb-2 lh-lg line-clamp-3 text-1100">“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users who want success.”</p>
-                            <p class="text-800 lh-xl mb-0">Barry Young</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 swiper-slide">
-                      <div class="d-flex justify-content-center gap-2">
-                        <div class="d-flex flex-column flex-lg-row gap-2 px-4 py-x1 review-card-3">
-                          <div class="text-center text-lg-start"><img class="card-image rounded-circle object-fit-cover" src="assets/img/feedback/reviewer_3.webp" alt="" /></div>
-                          <div class="text-center text-lg-start">
-                            <p class="fs-5 mb-2 lh-lg line-clamp-3 text-1100">“Must have book for all, who want to be Product Designer or Interaction Designer.”</p>
-                            <p class="text-800 lh-xl mb-0">Esther Allison</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 swiper-slide">
-                      <div class="d-flex justify-content-center gap-2">
-                        <div class="d-flex flex-column flex-lg-row gap-2 px-4 py-x1 review-card-4">
-                          <div class="text-center text-lg-start"><img class="card-image rounded-circle object-fit-cover" src="assets/img/feedback/kakashi.webp" alt="" /></div>
-                          <div class="text-center text-lg-start">
-                            <p class="fs-5 mb-2 lh-lg line-clamp-3 text-1100">“Every day, I eat, sleep, and worry about stupid things. My job is to ensure that these kids have as many days as possible where they can be idiots like this.”</p>
-                            <p class="text-800 lh-xl mb-0">Kakashi Hatake</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 swiper-slide">
-                      <div class="d-flex justify-content-center gap-2">
-                        <div class="d-flex flex-column flex-lg-row gap-2 px-4 py-x1 review-card-5">
-                          <div class="text-center text-lg-start"><img class="card-image rounded-circle object-fit-cover" src="assets/img/feedback/obito.webp" alt="" /></div>
-                          <div class="text-center text-lg-start">
-                            <p class="fs-5 mb-2 lh-lg line-clamp-3 text-1100">“Life isn’t permanent or predictable. You never know when you will run out of time. The best thing you can do is to be honest with those around you and let them know how you really feel. You never know if you have a tomorrow to come.”</p>
-                            <p class="text-800 lh-xl mb-0">Obito Uchiha</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-          <div class="text-center mb-5 pb-3"><a class="py-1 link-success" href="#!"><span>Read more reviews </span><span class="uil uil-arrow-right icon"></span></a></div>
-        </div>
+          <div class="text-center pt-5 pb-3 fs-5"><a class="link-success-1" href="#!"><span>Read more reviews </span><span class="uil uil-arrow-right icon"></span></a></div>
+              
+          </div>
       </div>
     </section>
 
@@ -334,7 +337,7 @@
           <div class="col-12" >
             <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-5 ">
               <div class="p-3 text-center bg-transparent border mb-3 mb-md-0 rounded-2 shadow" style="max-width: 380px;width: 90%; height: 70vh;">
-                <p class="fs-5 text-uppercase mt-3 mb-4 fw-bold ls-2 pricing-text"> Starter</p>
+                <p class="fs-10 text-uppercase mt-2 mb-3 fw-bold ls-2 pricing-text"> Starter</p>
                 <h2 class="mb-3"><span class=" fw-bold" style="font-size: 1.5rem;">$</span><span class=" fw-bold" style="font-size: 3.75rem;">19</span><span class="fs-5 lh-xl font-sans-serif">/ mo</span></h2>
                 <ul class="list-unstyled fs-5 lh-xl fw-light text-1100 ls-1 mt-3">
                   <li class="py-4 px-2 border-top"> Upto 100 Team Members </li>
@@ -345,7 +348,7 @@
                 </ul>
               </div>
               <div class="p-3 text-center bg-white border rounded-2 shadow" style="max-width: 380px;width: 90%; height: 70vh;">
-                <p class="fs-5 text-uppercase mt-3 mb-4 fw-bold ls-2 pricing-text"> Unlimited</p>
+                <p class="fs-10 text-uppercase mt-2 mb-3 fw-bold ls-2 pricing-text"> Unlimited</p>
                 <h2 class="mb-3"><span class="fw-bold" style="font-size: 1.5rem;">$</span><span class="fw-bold" style="font-size: 3.75rem;">99</span><span class="fs-5 lh-xl font-sans-serif">/ mo</span></h2>
                 <ul class="list-unstyled fs-5 lh-xl fw-light text-1100 ls-1 mt-3">
                   <li class="py-4 px-2 border-top"> Unlimited Team Members </li>
@@ -501,6 +504,13 @@
       </div>
     </footer>
     <a href="#" class="to-top text-center" aria-label="to-top"><i class="bi bi-chevron-up text-white"></i> </a>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
        var nav = document.querySelector('nav');
 
@@ -556,24 +566,38 @@
 
 
   // Swiper Slider
-  var swiperInit = function swiperInit() {
-  if (window.Swiper) {
-    var swipers = document.querySelectorAll('[data-swiper]');
-    swipers.forEach(function (swiper) {
-      var options = utils.getData(swiper, 'swiper');
-      var newSwiper = new window.Swiper(swiper, _objectSpread({}, options));
-      var navbarVerticalToggle = document.querySelector('.navbar-vertical-toggle');
-      if (navbarVerticalToggle) {
-        navbarVerticalToggle.addEventListener('navbar.vertical.toggle', function () {
-          newSwiper.update();
-        });
-      }
-    });
-  }
-};
+  var swiper = new Swiper('.swiper', {
+  slidesPerView: 3,
+  direction: getDirection(),
+  loop: true,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  mousewheel: {
+    invert: false,
+  },
+  on: {
+    resize: function () {
+      swiper.params.slidesPerView = getSlidesPerView();
+      swiper.changeDirection(getDirection());
+      swiper.update();
+    },
+  },
+});
+
+function getSlidesPerView() {
+  var windowWidth = window.innerWidth;
+  return windowWidth <= 991 ? 1 : 3;
+}
+
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  return windowWidth <= 991 ? 'horizontal' : 'vertical';
+}
+
     </script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     
   </body>
 </html>

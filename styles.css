@@ -75,6 +75,9 @@
     color: var(--button-hover)!important;
   
   }
+  .link-success-1{
+    color: #68D585 !important;
+  }
  .hero-background{
     background-image: url('assets/BG.webp');
     background-position: center;
@@ -290,6 +293,120 @@
 a{
   color: black !important;
   text-decoration: none !important;
+}
+.swiper-theme-container {
+  height: 21.875rem !important;
+  width: 40rem !important;
+  overflow: hidden;
+}
+.swiper-theme-container .swiper {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .swiper-theme-container {
+    width: 45.65rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .swiper-theme-container {
+    width: 45.65rem !important;
+    height: 37.5rem !important;
+    margin: auto;
+  }
+}
+
+.swiper-slide {
+  margin: auto;
+  border: 1px solid #57595E;
+  color: #161C2D;
+  border-radius: 0.75rem !important;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.swiper-slide:hover, .swiper-slide:focus {
+  background-color: #fff;
+}
+.swiper-slide .card-image {
+  width: 5.6rem;
+  height: 5.6rem;
+  border: 2px solid #979797;
+}
+.py-x1 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+.fs-10 {
+  font-size: 0.875rem !important;
+}
+
+.fs-9 {
+  font-size: 1rem !important;
+}
+
+.fs-8 {
+  font-size: 1.25rem !important;
+}
+
+.fs-7 {
+  font-size: 1.5rem !important;
+}
+
+.fs-6 {
+  font-size: 1.875rem !important;
+}
+
+.fs-5 {
+  font-size: 2.125rem !important;
+}
+
+.fs-4 {
+  font-size: 2.5rem !important;
+}
+
+.fs-3 {
+  font-size: 3rem !important;
+}
+
+.fs-2 {
+  font-size: 3.5rem !important;
+}
+
+.fs-1 {
+  font-size: 3.75rem !important;
+}
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 2;
+  box-orient: vertical;
+}
+@media (min-width: 992px) {
+  .swiper-slide .card-image {
+    width: 6.938rem;
+    height: 6.938rem;
+  }
+}
+
+.swiper-slide-active {
+  background-color: #fff;
+}
+
+.swiper-slide-prev, .swiper-slide-next {
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.swiper-slide-prev:hover, .swiper-slide-prev:focus, .swiper-slide-next:hover, .swiper-slide-next:focus {
+  background-color: #fff;
 }
 @media (max-width: 991px) {
   .timeline {
