@@ -55,12 +55,12 @@
             <div class="container mt-5 ">
                 <div class="row gy-4 gy-md-8 pt-10 pt-lg-8 align-items-center">
                     <div class="col-lg-6 text-center text-lg-start">
-                        <h1 class="fs-lg-1 text-white fw-bold mb-2 mt-3 mt-lg-0" style="font-size: 3.75rem;">
+                        <h1 class="text-white fw-bold mb-2 mt-3 mt-lg-0" style="font-size: 3.75rem;">
                             Manage your remote team work
                         </h1>
                        <p class="fs-5 text-white mb-3 mb-lg-4 lh-lg">With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes</p>
                         <div><button class="btn btn-custom text-white px-4  fw-bold py-3"> Explore more</button></div>
-                        <p class="mb-x1 text-white fs-10 button-text text-uppercase fw-bold lh-base text-300 mt-5">Download our app</p>
+                        <p class="text-white fs-7 button-text text-uppercase fw-bold lh-base text-300 mt-5">Download our app</p>
                         <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 position-relative z-2">
                           <img class="img-fluid pointer" src="assets/App_Store.webp" alt="App Store">
                           <img class="img-fluid pointer"  src="assets/Play_Store.webp" alt="Google Play">
@@ -146,33 +146,29 @@
       </div>
     </section>
 
-    <section class="mb-5">
-      <div class="container">
-        <div class="timeline">
-            <div class="timeline-step">
-                <div class="circle">1</div>
-                <div class="title">Install App</div>
-                <div class="description">Start with adding team members to your channels.</div>
-            </div>
-            <div class="timeline-step">
-                <div class="circle">2</div>
-                <div class="title">Add Team Members</div>
-                <div class="description">Start with adding team members to your channels.</div>
-            </div>
-            <div class="timeline-step">
-                <div class="circle">3</div>
-                <div class="title">Start Rolling</div>
-                <div class="description">Start operating your business in a simpler way and grow!</div>
-            </div>
-        </div>
-    </div>
-    </section>
+    <div class="container" id="support">
+      <div class="timeline">
+          <div class="timeline-step">
+              <div class="circle">1</div>
+              <div class="title">Install App</div>
+              <div class="description">Start with adding team members to your channels.</div>
+          </div>
+          <div class="timeline-step">
+              <div class="circle">2</div>
+              <div class="title">Add Team Members</div>
+              <div class="description">Start with adding team members to your channels.</div>
+          </div>
+          <div class="timeline-step">
+              <div class="circle">3</div>
+              <div class="title">Start Rolling</div>
+              <div class="description">Start operating your business in a simpler way and grow!</div>
+          </div>
+      </div>
+  </div>
 
 
-
-
-
-    <section class="experience position-relative overflow-hidden" id="support">
+    <section class="experience position-relative overflow-hidden" >
+      
       <div class="position-absolute top-4 start-0 ">
         <div class="bg-white py-5 " style="width: 130%;"></div>
         <img class="wave"  src="assets/Wave_2.svg" style="width: 120%; height: 110%; " alt="">
@@ -507,12 +503,26 @@
     <a href="#" class="to-top text-center" aria-label="to-top"><i class="bi bi-chevron-up text-white"></i> </a>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+
+      //navbar close on click
+      document.addEventListener("DOMContentLoaded", function() {
+    var navLinks = document.querySelectorAll('.navbar-nav>li>a');
+    var navCollapse = document.querySelector('.navbar-collapse');
+
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            var bsCollapse = new bootstrap.Collapse(navCollapse, {
+                toggle: false
+            });
+            bsCollapse.hide();
+        });
+    });
+});
+      
        var nav = document.querySelector('nav');
 
       window.addEventListener('scroll', function() {
